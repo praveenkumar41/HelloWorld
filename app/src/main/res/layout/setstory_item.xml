@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_centerHorizontal="true"
+        app:cardCornerRadius="20dp"
+        android:layout_centerVertical="true">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="13.5dp">
+
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/cardimage"
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginLeft="8dp"
+                    android:src="@drawable/ic_launcher_background"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/textside"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="74dp"
+            android:layout_marginTop="16dp"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/cardtitle"
+                    android:textSize="19sp"
+                    android:textColor="@color/black"
+                    android:text="hhhhhdhsdbdbshh"
+                    android:textStyle="bold"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/cardtitle1"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="5dp"
+                    android:text="hhhhhdhsdbdbshh"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="82dp">
+
+
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="300dp"
+                android:textColor="@color/black"
+                android:fontFamily="sans-serif-light"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:autoLink="all"
+                android:textColorLink="#1DA1F2"
+                android:layout_marginLeft="15dp"
+                android:textSize="20dp"/>
+
+            <RelativeLayout
+                android:id="@+id/reel"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/description"
+                android:layout_marginLeft="8dp">
+
+                <com.example.project2.PinchZoomImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
+                    android:background="@drawable/imagebackground"
+                    android:id="@+id/thumbnail"/>
+
+                <com.example.project2.PinchZoomImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
+                    android:background="@drawable/imagebackground"
+                    android:id="@+id/videothumbnail"/>
+
+                <ImageView
+                    android:id="@+id/clickplay"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/videoplaybutton"
+                    android:layout_centerInParent="true"
+                    android:visibility="gone"/>
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+    <RelativeLayout
+        android:id="@+id/r1"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/corner_layout1">
+
+
+        <TextView
+            android:id="@+id/text"
+            android:padding="5dp"
+            android:layout_width="340dp"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content"
+            android:text="blueberry"
+            android:textSize="30dp"
+            android:textColor="@color/white"/>
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/allseek"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/r1">
+
+        <SeekBar
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/seek1"
+            android:layout_centerHorizontal="true"
+            android:max="100"
+            android:progress="0"
+            android:layout_marginTop="16dp"
+            android:thumb="@android:color/transparent"
+            android:progressDrawable="@drawable/poll_tracker"
+            />
+
+        <TextView
+            android:id="@+id/seek1text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Java"
+            android:maxLength="36"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="25dp"/>
+
+
+        <TextView
+            android:id="@+id/seek1per"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="25%"
+            android:layout_marginLeft="316dp"
+            android:layout_marginTop="25dp"/>
+
+
+        <SeekBar
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/seek2"
+            android:layout_below="@+id/seek1"
+            android:layout_centerHorizontal="true"
+            android:max="100"
+            android:progress="0"
+            android:layout_marginTop="8dp"
+            android:thumb="@android:color/transparent"
+            android:progressDrawable="@drawable/poll_tracker"
+            />
+
+
+        <TextView
+            android:id="@+id/seek2text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Java"
+            android:maxLength="36"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="74dp"/>
+
+
+        <TextView
+            android:id="@+id/seek2per"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="25%"
+            android:layout_marginLeft="316dp"
+            android:layout_marginTop="75dp"/>
+
+
+
+        <SeekBar
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/seek3"
+            android:layout_below="@+id/seek2"
+            android:layout_centerHorizontal="true"
+            android:max="100"
+            android:progress="0"
+            android:layout_marginTop="8dp"
+            android:thumb="@android:color/transparent"
+            android:progressDrawable="@drawable/poll_tracker"
+            />
+
+
+        <TextView
+            android:id="@+id/seek3text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Java"
+            android:maxLength="36"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="121dp"/>
+
+
+        <TextView
+            android:id="@+id/seek3per"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="25%"
+            android:layout_marginLeft="316dp"
+            android:layout_marginTop="123dp"/>
+
+
+        <SeekBar
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/seek4"
+            android:layout_below="@+id/seek3"
+            android:layout_centerHorizontal="true"
+            android:max="100"
+            android:progress="0"
+            android:layout_marginTop="8dp"
+            android:thumb="@android:color/transparent"
+            android:progressDrawable="@drawable/poll_tracker"
+            />
+
+
+        <TextView
+            android:id="@+id/seek4text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Java"
+            android:maxLength="36"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="169dp"/>
+
+
+        <TextView
+            android:id="@+id/seek4per"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="25%"
+            android:layout_marginLeft="316dp"
+            android:layout_marginTop="171dp"/>
+
+
+
+        <SeekBar
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/seek5"
+            android:layout_below="@+id/seek4"
+            android:layout_centerHorizontal="true"
+            android:max="100"
+            android:progress="0"
+            android:layout_marginTop="8dp"
+            android:thumb="@android:color/transparent"
+            android:progressDrawable="@drawable/poll_tracker"
+            />
+
+
+        <TextView
+            android:id="@+id/seek5text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Java"
+            android:maxLength="36"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="219dp"/>
+
+
+        <TextView
+            android:id="@+id/seek5per"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="25%"
+            android:layout_marginLeft="316dp"
+            android:layout_marginTop="219dp"/>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+    <com.google.android.exoplayer2.ui.PlayerView
+        android:id="@+id/player_view"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/delete"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:background="@drawable/ripple4"
+        android:src="@drawable/delete_story"
+        android:padding="6dp"
+        android:visibility="gone"
+        android:layout_marginTop="560dp"
+        android:layout_marginLeft="11dp" />
+
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/views"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:background="@drawable/ripple4"
+        android:src="@drawable/eye"
+        android:padding="6dp"
+        android:visibility="gone"
+        android:layout_marginTop="560dp"
+        android:layout_marginLeft="57dp" />
+
+
+</RelativeLayout>

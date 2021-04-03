@@ -1,0 +1,66 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ThirdActivity">
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/usernamebox"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        app:boxBackgroundMode="filled"
+        android:focusableInTouchMode="true"
+        android:focusedByDefault="false"
+        app:boxBackgroundColor="#37CBD0D5"
+        app:boxStrokeColor="#1DA1F2"
+        android:layout_centerHorizontal="true"
+        android:outlineAmbientShadowColor="#1DA1F2"
+        android:outlineSpotShadowColor="#1DA1F2"
+        android:layout_marginTop="210dp"
+        android:layout_marginLeft="18dp"
+        app:helperTextTextColor="#1DA1F2"
+        app:placeholderTextColor="#1DA1F2"
+        android:textColorHint="#1DA1F2"
+        app:hintTextColor="#1DA1F2"
+        app:boxStrokeErrorColor="#1DA1F2"
+        android:hint="USERNAME">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/username"
+            android:textCursorDrawable="@drawable/color_cursor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/exists"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:layout_below="@+id/usernamebox"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textColor="#EF0A4A"/>
+
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#1DA1F2"
+        android:layout_marginTop="80dp"
+        android:layout_centerHorizontal="true"
+        app:rippleColor="#FFFFFF"
+        android:textColor="@color/white"
+        android:layout_below="@+id/usernamebox"
+        android:text="next"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

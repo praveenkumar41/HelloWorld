@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.project2">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.hardware.camera2.full" />
+    <uses-permission android:name="android.hardware.camera2.CameraDevice" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+
+    <supports-screens
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+
+    <application
+        android:name=".Project2"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:ignore="GoogleAppIndexingWarning">
+
+        <activity android:name=".LikesActivity"/>
+        <activity android:name=".GroupChat.GroupChatActivity"/>
+        <activity android:name=".GroupChat.GroupChatpad"/>
+        <activity android:name=".AllContacts_list" />
+        <activity android:name=".Poll_Activity" />
+        <activity android:name=".Newsignin.FirstPage_Activity" />
+        <activity android:name=".Newsignin.Getting_Username" />
+        <activity android:name=".Newsignin.PhoneAunthentication" />
+        <activity android:name=".Newsignin.SecondPage_Activity" />
+        <activity android:name=".Newsignin.ThirdActivity" />
+
+        <activity android:name=".phone_code_verification" />
+        <activity android:name=".Searchusers_friends" />
+        <activity android:name=".PostViewer_Activity" />
+        <activity android:name=".FollowingActivity"></activity>
+        <activity android:name=".GalleryPick.GalleryFragment"/>
+        <activity android:name=".FollowersActivity" />
+        <activity android:name=".fragment_profile" />
+        <activity android:name=".Comments_Activity" />
+        <activity android:name=".ImageView_forphoto" />
+        <activity
+            android:name=".VideoPlayingActivity"
+            android:configChanges="orientation|screenSize|layoutDirection" />
+        <activity android:name=".New_Stories_Activity" />
+        <activity android:name=".AddPostActivity" >
+
+
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:host="blueberry.page.link"
+                    android:scheme="https"/>
+            </intent-filter>
+
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="image/*"/>
+            </intent-filter>
+
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="text/plain"/>
+            </intent-filter>
+
+        </activity>
+        <activity android:name=".SearchActivity" />
+        <activity android:name=".videostream.Post_image_write_something" />
+        <activity android:name=".Post_write_something" />
+        <activity android:name=".FriendRequest" />
+        <activity android:name=".Alltype_Story"/>
+        <activity android:name=".Dummy_chatpad"/>
+        <activity android:name=".Directmessages_settings"/>
+        <activity android:name=".Usermessage_settings" />
+        <activity android:name=".Story_seen_List"/>
+        <activity android:name=".StoryActivity"/>
+        <activity android:name=".AddStoryActivity"/>
+        <activity android:name=".Story_Image_View"/>
+        <activity android:name=".Chatfragment1"/>
+        <activity android:name=".AutomaticDeleteMessage" />
+        <activity android:name=".SettingActivity" />
+        <activity android:name=".ViewImageActivity" />
+        <activity android:name=".Allsongsdisplay" />
+        <activity android:name=".Notification_display" />
+        <activity android:name=".Report_on_user" />
+        <activity android:name=".Blockeduserslistfragment" />
+        <activity android:name=".Otheruserswithmusicprofile" />
+        <activity android:name=".Intoapp">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" />
+        <activity android:name=".SignupActivity" />
+        <activity android:name=".StartActivity" />
+        <activity android:name=".Startapp" />
+        <activity android:name=".Usereditprofilepage" />
+        <activity android:name=".Alluserprofile" />
+        <activity android:name=".FriendsChatpad" />
+        <activity android:name=".BlockedListFragment" />
+        <activity android:name=".Report_on_user" />
+        <activity android:name=".Notification_display" />
+        <activity android:name=".Allsongsdisplay" />
+        <activity android:name=".ViewImageActivity" />
+        <activity android:name=".SettingActivity" />
+        <activity
+            android:name=".AutomaticDeleteMessage"
+            tools:ignore="DuplicateActivity" />
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat" />
+
+        <service
+            android:name=".MyFirebaseInstanceIdService"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".Notification.MyFirebaseIdService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".Notification.MyFirebaseMessaging"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <provider
+            android:authorities="com.example.project2.fileprovider"
+            android:name="androidx.core.content.FileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/paths"
+                />
+
+        </provider>
+
+
+    </application>
+
+</manifest>

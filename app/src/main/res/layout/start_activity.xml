@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StartActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="340dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="20dp"
+        android:layout_height="580dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="29dp"
+        android:layout_centerHorizontal="true">
+
+
+        <EditText
+            android:id="@+id/un"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="90dp"/>
+
+    <TextView
+        android:id="@+id/date12"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/un"
+        android:layout_marginLeft="45dp"
+        android:textSize="20dp"
+        android:layout_marginTop="220dp"
+        android:hint="Date of Birth" />
+
+
+        <RadioGroup
+            android:id="@+id/rg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="280dp"
+            android:layout_marginLeft="22dp"
+            android:orientation="horizontal">
+
+
+            <RadioButton
+                android:id="@+id/rm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="12dp"
+                android:text="Male"/>
+
+            <RadioButton
+                android:id="@+id/rf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/r1"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="10dp"
+                android:text="Female" />
+
+        </RadioGroup>
+
+
+
+    <Button
+        android:id="@+id/b1"
+        android:layout_width="130dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="350dp"
+        android:text="Continue"
+        android:textColor="#0080FF"
+        android:background="@drawable/ripple"
+        android:layout_marginLeft="80dp"
+        />
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

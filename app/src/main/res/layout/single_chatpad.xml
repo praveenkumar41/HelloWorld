@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="280dp"
+    android:padding="8dp"
+    android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_marginLeft="165dp"/>
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imageenter1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="7dp"
+            android:src="@mipmap/ic_launcher_round" />
+
+        <TextView
+            android:id="@+id/un"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:autoLink="all"
+            android:textColorLink="#1DA1F2"
+            android:layout_toRightOf="@+id/imageenter1"
+            android:background="@drawable/chatdisplay"
+            android:layout_marginTop="5dp"
+            android:padding="8dp"
+            android:autoSizeTextType="uniform"
+            android:text="hello"
+            android:textSize="18sp"
+            android:textColor="#000000" />
+
+
+        <TextView
+            android:id="@+id/time1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_marginTop="0dp"
+            android:layout_below="@+id/un"
+            android:textSize="12dp"
+            android:layout_marginLeft="50dp"
+            android:fontFamily="sans-serif-medium"/>
+
+
+
+
+        <ImageView
+                    android:id="@+id/imagemessage"
+                    android:layout_width="220dp"
+                    android:layout_height="240dp"
+                    android:layout_marginLeft="43dp"
+                    android:layout_marginTop="3dp"
+                    android:src="@mipmap/ic_launcher_round"
+                    tools:ignore="MissingPrefix" />
+
+
+        <TextView
+            android:id="@+id/imagetime1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_below="@+id/imagemessage"
+            android:textSize="12dp"
+            android:layout_marginLeft="200dp"
+            android:fontFamily="sans-serif-medium"/>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/musiccard"
+            android:layout_width="250dp"
+            android:layout_height="70dp"
+            app:cardCornerRadius="10dp"
+            android:layout_marginTop="13dp"
+            android:layout_marginLeft="42dp"
+            app:cardBackgroundColor="#D3D3D3"
+            app:cardElevation="10dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="200dp"
+            app:cardCornerRadius="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="6dp"
+            app:cardElevation="10dp"
+            android:layout_height="55dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/manheadphones"
+                    android:layout_marginTop="7dp"/>
+
+                <ImageView
+                    android:id="@+id/imageplaypause"
+                    android:layout_width="30dp"
+                    android:layout_height="29dp"
+                    android:src="@drawable/playmusic"
+                    android:layout_marginLeft="43dp"
+                    android:layout_marginTop="12dp"
+                    />
+
+
+                <ImageView
+                    android:id="@+id/imageplaypause1"
+                    android:layout_width="30dp"
+                    android:layout_height="29dp"
+                    android:src="@drawable/pausemusic"
+                    android:layout_marginLeft="43dp"
+                    android:layout_marginTop="12dp"
+                    />
+
+
+                <SeekBar
+                    android:id="@+id/playerseekbar"
+                    android:layout_width="116dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="76dp"
+                    android:layout_marginTop="20dp" />
+
+
+                <TextView
+                    android:id="@+id/slidingtext"
+                    android:layout_width="120dp"
+                    android:layout_height="14dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginLeft="76dp"
+                    android:textSize="11dp"
+                    android:text="hghghghgghhhhhhhhhhhhhghghghghghgh"
+                    android:singleLine="true"
+                    android:ellipsize="marquee"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:scrollHorizontally="true"/>
+
+
+                <TextView
+                    android:id="@+id/textcurrenttime"
+                    android:layout_width="20dp"
+                    android:layout_height="15dp"
+                    android:layout_marginTop="40dp"
+                    android:textSize="10dp"
+                    android:text="@string/zero"
+                    android:layout_marginLeft="78dp"/>
+
+
+                <TextView
+                    android:id="@+id/texttotalduration"
+                    android:layout_width="20dp"
+                    android:layout_height="15dp"
+                    android:layout_marginTop="40dp"
+                    android:textSize="10dp"
+                    android:text="@string/zero"
+                    android:layout_marginLeft="169dp"/>
+
+        </androidx.cardview.widget.CardView>
+        </androidx.cardview.widget.CardView>
+</RelativeLayout>
+
+
+

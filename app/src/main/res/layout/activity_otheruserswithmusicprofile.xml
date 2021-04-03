@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/fragment1"
+    android:background="#ffff"
+    tools:context=".Otheruserswithmusicprofile">
+
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/gif"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginLeft="35dp"
+        android:src="@drawable/gif"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        />
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/musicimage"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/ic_launcher_round"
+        android:layout_marginTop="82dp"
+        android:layout_marginLeft="105dp"/>
+
+    <ImageView
+        android:id="@+id/threedots"
+        android:layout_width="30dp"
+        android:layout_height="40dp"
+        android:src="@drawable/dots"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="319dp"
+
+        />
+
+    <ImageView
+        android:id="@+id/backbutton"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/back"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="15dp"/>
+
+
+    <TextView
+        android:id="@+id/musicname"
+        android:layout_width="220dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/gif"
+        android:text="jbdfjdbgffhgbgfjhh"
+        android:textSize="29dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="130dp"/>
+
+
+</RelativeLayout>
+

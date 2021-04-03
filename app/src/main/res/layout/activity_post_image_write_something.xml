@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Post_image_write_something">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="380dp"
+        android:layout_height="430dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="75dp">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/image"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="30dp"
+            android:src="@drawable/ic_launcher_background"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Post"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_marginLeft="79dp"
+            android:layout_marginTop="25dp"/>
+
+        <ImageView
+            android:id="@+id/poster"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="70dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/titlecard"
+                android:layout_width="330dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="275dp"
+                app:cardCornerRadius="8dp"
+                android:elevation="4dp"
+                android:layout_marginLeft="22dp">
+
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add Title"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:textSize="25dp"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/titletext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="45dp"
+                    app:errorEnabled="true"
+                    android:visibility="gone">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="330dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/titlecard"
+                android:layout_marginLeft="22dp"
+                android:layout_marginTop="2dp">
+
+                <TextView
+                    android:id="@+id/caption"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add Caption"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:textSize="25dp"/>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/captiontext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="45dp"
+                    android:visibility="gone">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <ImageView
+        android:id="@+id/uploadpost"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/postdone"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="370dp"
+        android:background="@drawable/custompost"/>
+
+
+    <ImageView
+        android:id="@+id/cancelpost"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/closepost"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="10dp"
+        android:background="@drawable/custompost"/>
+
+
+</RelativeLayout>

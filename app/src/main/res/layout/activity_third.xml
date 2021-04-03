@@ -1,0 +1,117 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ThirdActivity">
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/mailbox"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        app:boxBackgroundMode="filled"
+        android:focusableInTouchMode="true"
+        android:focusedByDefault="false"
+        app:boxBackgroundColor="#37CBD0D5"
+        app:boxStrokeColor="#1DA1F2"
+        android:layout_centerHorizontal="true"
+        android:outlineAmbientShadowColor="#1DA1F2"
+        android:outlineSpotShadowColor="#1DA1F2"
+        android:layout_marginTop="210dp"
+        android:layout_marginLeft="18dp"
+        app:helperTextTextColor="#1DA1F2"
+        app:placeholderTextColor="#1DA1F2"
+        android:textColorHint="#1DA1F2"
+        app:hintTextColor="#1DA1F2"
+        app:boxStrokeErrorColor="#1DA1F2"
+        android:hint="EMAILID">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/email"
+            android:textCursorDrawable="@drawable/color_cursor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/codebox"
+        app:boxBackgroundColor="#37CBD0D5"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        app:boxBackgroundMode="filled"
+        android:visibility="gone"
+        android:focusableInTouchMode="true"
+        android:focusedByDefault="false"
+        app:boxStrokeColor="#1DA1F2"
+        android:layout_marginLeft="18dp"
+        android:outlineAmbientShadowColor="#1DA1F2"
+        android:outlineSpotShadowColor="#1DA1F2"
+        app:helperTextTextColor="#1DA1F2"
+        android:layout_marginTop="210dp"
+        app:placeholderTextColor="#1DA1F2"
+        android:textColorHint="#1DA1F2"
+        app:hintTextColor="#1DA1F2"
+        app:boxStrokeErrorColor="#1DA1F2"
+        android:hint="CODE">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/code"
+            android:textCursorDrawable="@drawable/color_cursor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/phonebox"
+        app:boxBackgroundColor="#37CBD0D5"
+        android:layout_width="267dp"
+        android:layout_height="wrap_content"
+        app:boxBackgroundMode="filled"
+        android:focusableInTouchMode="true"
+        android:focusedByDefault="false"
+        android:layout_marginLeft="130dp"
+        app:boxStrokeColor="#1DA1F2"
+        android:visibility="gone"
+        android:outlineAmbientShadowColor="#1DA1F2"
+        android:outlineSpotShadowColor="#1DA1F2"
+        app:helperTextTextColor="#1DA1F2"
+        android:layout_marginTop="210dp"
+        app:placeholderTextColor="#1DA1F2"
+        android:textColorHint="#1DA1F2"
+        app:hintTextColor="#1DA1F2"
+        app:boxStrokeErrorColor="#1DA1F2"
+        android:hint="PHONENUMBER">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/phone"
+            android:textCursorDrawable="@drawable/color_cursor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <TextView
+        android:id="@+id/select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="290dp"
+        android:textColor="#1DA1F2"
+        android:textSize="16dp"
+        android:text="Instead use phone"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#0080FF"
+        android:layout_marginTop="330dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"
+        app:rippleColor="#FFFFFF"
+        android:text="next"/>
+
+</RelativeLayout>

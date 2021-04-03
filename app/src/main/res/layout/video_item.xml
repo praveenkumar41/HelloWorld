@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.jcminarro.roundkornerlayout.RoundKornerRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="390dp"
+        android:elevation="2dp"
+        app:cardCornerRadius="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content">
+
+        <com.jcminarro.roundkornerlayout.RoundKornerRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="45dp"
+                android:id="@+id/vimage"
+                android:layout_height="45dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/ic_launcher_background"/>
+
+            <TextView
+                android:id="@+id/vname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12345666"
+                android:textSize="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_toEndOf="@+id/vimage"/>
+
+            <TextView
+                android:id="@+id/vusername"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12345666"
+                android:textSize="15dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="10dp"
+                android:layout_toEndOf="@+id/vimage"/>
+
+
+
+            <FrameLayout
+                android:id="@+id/f"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/vimage">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <com.google.android.exoplayer2.ui.PlayerView
+                        android:id="@+id/vvideo"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/black">
+
+
+                            <ImageView
+                                android:id="@+id/volume1"
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:layout_marginLeft="340dp"
+                                android:layout_marginTop="208dp"
+                                android:src="@drawable/ic_volume_up_grey" />
+
+                        <ProgressBar
+                            android:id="@+id/bar"
+                            android:layout_width="65dp"
+                            android:layout_height="65dp"
+                            android:layout_marginTop="89dp"
+                            android:visibility="invisible"
+                            android:layout_marginLeft="160dp"/>
+
+
+                    </com.google.android.exoplayer2.ui.PlayerView>
+
+                </LinearLayout>
+
+
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/vuploadtime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/f"
+                android:layout_marginTop="30dp"
+                android:text="jksd"
+                android:layout_marginStart="5dp"/>
+
+
+        </com.jcminarro.roundkornerlayout.RoundKornerRelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</com.jcminarro.roundkornerlayout.RoundKornerRelativeLayout>

@@ -1,0 +1,93 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".FirstPage_Activity">
+
+    <TextView
+        android:id="@+id/heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create your Account"
+        android:textSize="27dp"
+        android:textColor="#00070E"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"/>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        app:boxBackgroundMode="filled"
+        app:boxBackgroundColor="#37CBD0D5"
+        app:counterEnabled="true"
+        android:focusableInTouchMode="true"
+        android:focusedByDefault="false"
+        app:counterMaxLength="25"
+        app:boxStrokeColor="#1DA1F2"
+        android:outlineAmbientShadowColor="#1DA1F2"
+        android:outlineSpotShadowColor="#1DA1F2"
+        android:layout_marginTop="210dp"
+        app:helperTextTextColor="#1DA1F2"
+        app:placeholderTextColor="#1DA1F2"
+        android:textColorHint="#1DA1F2"
+        app:hintTextColor="#1DA1F2"
+        app:boxStrokeErrorColor="#1DA1F2"
+        android:hint="YOURNAME">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/name"
+            android:textCursorDrawable="@drawable/color_cursor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/edit1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        app:boxBackgroundColor="#37CBD0D5"
+        android:layout_below="@+id/edit"
+        app:boxBackgroundMode="filled"
+        android:focusableInTouchMode="true"
+        android:focusedByDefault="false"
+        app:boxStrokeColor="#1DA1F2"
+        android:outlineAmbientShadowColor="#1DA1F2"
+        android:outlineSpotShadowColor="#1DA1F2"
+        app:helperTextTextColor="#1DA1F2"
+        android:layout_marginTop="7dp"
+        app:placeholderTextColor="#1DA1F2"
+        android:textColorHint="#1DA1F2"
+        app:hintTextColor="#1DA1F2"
+        app:boxStrokeErrorColor="#1DA1F2"
+        android:hint="DATEOFBIRTH">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/dob"
+            android:textCursorDrawable="@drawable/color_cursor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#0080FF"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        app:rippleColor="#FFFFFF"
+        android:textColor="@color/white"
+        android:layout_below="@+id/edit1"
+        android:text="next"/>
+
+
+</RelativeLayout>

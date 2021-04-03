@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context=".PostViewer_Activity">
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/barlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:background="@color/white"
+            app:popupTheme="@style/MenuStyle">
+
+
+            <TextView
+                android:id="@+id/onlinename"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="26dp"
+                android:text="post"
+                android:textColor="@color/black"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="60dp"/>
+
+
+            <ImageView
+                android:id="@+id/backintent"
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/backs"
+                android:layout_marginTop="11dp"/>
+
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/barlayout">
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="400dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_below="@+id/barlayout"
+            android:padding="6dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="12dp">
+
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/profileimage"
+                        android:layout_width="52dp"
+                        android:layout_height="52dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginLeft="10sp"
+                        android:src="@drawable/ic_launcher_background"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/textside"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="70dp"
+                android:layout_marginTop="14sp"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/title"
+                        android:textSize="19sp"
+                        android:textColor="@color/black"
+                        android:text="hhhhhdhsdbdbshh"
+                        android:textStyle="bold"/>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/title1"
+                        android:textSize="16sp"
+                        android:layout_marginLeft="1dp"
+                        android:text="hhhhhdhsdbdbshh"
+                        android:textStyle="bold"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/postbutton"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="370dp"
+                android:src="@drawable/postsidebutton"
+                android:layout_marginTop="23dp"/>
+
+
+            <RelativeLayout
+                android:id="@+id/below"
+                android:layout_width="380dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="76dp"
+                android:layout_marginLeft="10sp">
+
+
+                <TextView
+                    android:id="@+id/description"
+                    android:layout_width="376dp"
+                    android:textColor="@color/black"
+                    android:fontFamily="sans-serif-light"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:autoLink="all"
+                    android:layout_centerHorizontal="true"
+                    android:textColorLink="#1DA1F2"
+                    android:layout_marginLeft="15dp"
+                    android:textSize="20dp"/>
+
+
+                <RelativeLayout
+                    android:id="@+id/reel"
+                    android:layout_width="376dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/description"
+                    android:layout_marginLeft="5dp">
+
+
+
+                    <com.example.project2.PinchZoomImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerCrop"
+                        android:background="@drawable/imagebackground"
+                        android:id="@+id/thumbnail"/>
+
+                    <com.example.project2.PinchZoomImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerCrop"
+                        android:background="@drawable/imagebackground"
+                        android:id="@+id/videothumbnail"/>
+
+                    <ImageView
+                        android:id="@+id/clickplay"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/videoplaybutton"
+                        android:layout_centerInParent="true"
+                        android:visibility="gone"/>
+
+
+                </RelativeLayout>
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/first"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="3dp"
+                    android:layout_below="@+id/liketab">
+
+
+
+                    <RelativeLayout
+                        android:id="@+id/first"
+                        android:layout_width="370dp"
+                        android:layout_marginTop="1dp"
+                        android:layout_height="wrap_content"
+                        android:padding="7dp">
+
+
+                        <TextView
+                            android:id="@+id/nolikes"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1,234 Likes"
+                            android:textStyle="bold"
+                            android:textSize="16dp"
+                            android:layout_marginLeft="35dp"/>
+
+                        <TextView
+                            android:id="@+id/nocomments"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1,234 Comments"
+                            android:textSize="16dp"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="148dp"/>
+
+                    </RelativeLayout>
+
+
+
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/liketab"
+                    android:layout_width="match_parent"
+                    android:layout_below="@+id/reel"
+                    android:layout_height="wrap_content">
+
+
+                    <RelativeLayout
+                        android:layout_width="360dp"
+                        android:layout_marginLeft="11dp"
+                        android:padding="6dp"
+                        android:id="@+id/below1"
+                        android:layout_height="wrap_content">
+
+                        <xyz.hanks.library.bang.SmallBangView
+                            android:id="@+id/b1"
+                            android:layout_width="30dp"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="20dp"
+                            app:circle_end_color="#ffbc00"
+                            app:circle_start_color="#fa9651"
+                            app:dots_primary_color="#fa9651"
+                            android:layout_marginTop="0dp"
+                            app:dots_secondary_color="#ffbc00">
+
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:id="@+id/like"
+                                android:layout_width="28dp"
+                                android:layout_height="28dp"
+                                android:layout_marginTop="5dp"
+                                android:src="@drawable/heart101" />
+
+                        </xyz.hanks.library.bang.SmallBangView>
+
+                        <TextView
+                            android:id="@+id/likes"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="2777"
+                            android:layout_marginTop="7dp"
+                            android:layout_marginLeft="50dp"
+                            android:textSize="16dp"/>
+
+
+                        <xyz.hanks.library.bang.SmallBangView
+                            android:id="@+id/b3"
+                            android:layout_width="30dp"
+                            android:layout_height="38dp"
+                            android:layout_marginLeft="285dp"
+                            app:circle_end_color="#ffbc00"
+                            app:circle_start_color="#fa9651"
+                            app:dots_primary_color="#fa9651"
+                            app:dots_secondary_color="#ffbc00">
+
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:id="@+id/book"
+                                android:layout_width="28dp"
+                                android:layout_height="28dp"
+                                android:layout_marginTop="7dp"
+                                android:src="@drawable/bookmark"/>
+
+                        </xyz.hanks.library.bang.SmallBangView>
+
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/comment"
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_marginTop="7dp"
+                            android:layout_marginLeft="105dp"
+                            android:src="@mipmap/ic_commentssss" />
+
+
+                        <TextView
+                            android:id="@+id/comments"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="2277"
+                            android:textSize="16dp"
+                            android:layout_marginLeft="136dp"
+                            android:layout_marginTop="8dp"/>
+
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:id="@+id/share"
+                                android:layout_width="27dp"
+                                android:layout_height="35dp"
+                                android:layout_marginTop="2dp"
+                                android:layout_marginLeft="215dp"
+                                android:src="@drawable/sharepost" />
+
+                    </RelativeLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+
+                <TextView
+                    android:id="@+id/agotime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="posted on"
+                    android:textSize="16dp"
+                    android:padding="5dp"
+                    android:layout_below="@+id/first"
+                    android:layout_marginLeft="38dp"
+                    android:layout_marginTop="3dp"/>
+
+            </RelativeLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+    </ScrollView>
+
+
+</RelativeLayout>

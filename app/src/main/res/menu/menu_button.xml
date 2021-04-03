@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/home1"
+        android:icon="@drawable/navi_home"
+        app:iconTint="#CFCDCD"
+        android:title=""
+        app:showAsAction="never"
+        app:backgroundColor="#0080FF"/>
+
+
+    <item
+        android:id="@+id/search1"
+        android:title=""
+        android:icon="@drawable/navi_search"
+        android:iconTint="#CFCDCD"
+        app:showAsAction="never"
+        app:backgroundColor="#0080FF">
+
+    </item>
+
+
+    <item
+        android:id="@+id/notification1"
+        android:icon="@drawable/navi_noti"
+        app:iconTint="#CFCDCD"
+        android:title=""
+        app:showAsAction="never"
+        app:backgroundColor="#0080FF">
+
+
+    </item>
+
+    <item
+        android:id="@+id/messages1"
+        android:icon="@drawable/navi_message"
+        android:title=""
+        app:iconTint="#CFCDCD"
+        app:showAsAction="never"
+        app:backgroundColor="#0080FF">
+    </item>
+
+
+    <item
+        android:id="@+id/profile1"
+        android:icon="@drawable/person"
+        app:iconTint="#CFCDCD"
+        android:title=""
+        app:showAsAction="never"
+        app:backgroundColor="#0080FF">
+    </item>
+
+</menu>

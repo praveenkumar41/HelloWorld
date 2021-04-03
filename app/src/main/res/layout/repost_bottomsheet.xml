@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/repost"
+            android:layout_width="match_parent"
+            android:padding="8dp"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:layout_marginLeft="14dp"
+                android:src="@drawable/repeat_black"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Repost"
+                android:layout_marginLeft="28dp"
+                android:textColor="@color/black"
+                android:textSize="26dp"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/repostwithcomment"
+            android:layout_width="match_parent"
+            android:padding="8dp"
+            android:layout_marginTop="60dp"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:layout_marginLeft="14dp"
+                android:src="@drawable/repostwithcomment"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Repost with comment"
+                android:layout_marginLeft="28dp"
+                android:textColor="@color/black"
+                android:textSize="26dp"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/repostwithstory"
+            android:layout_width="match_parent"
+            android:padding="8dp"
+            android:layout_marginTop="120dp"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:layout_marginLeft="14dp"
+                android:src="@drawable/repostwithstory"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add to story"
+                android:layout_marginLeft="28dp"
+                android:textColor="@color/black"
+                android:textSize="26dp"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

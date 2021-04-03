@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/slideview"
+    android:layout_height="match_parent"
+    tools:context=".SharebottomSheets">
+
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/shareviastory"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <ImageView
+            android:layout_width="39dp"
+            android:layout_height="39dp"
+            android:src="@drawable/repostwithstory"
+            android:layout_marginTop="11dp"
+            android:layout_marginLeft="15dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Send via story"
+            android:textSize="26dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="80dp"/>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/shareviamessage"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/shareviastory"
+        android:layout_height="60dp">
+
+        <ImageView
+            android:layout_width="39dp"
+            android:layout_height="39dp"
+            android:src="@drawable/message"
+            android:layout_marginTop="11dp"
+            android:layout_marginLeft="15dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Send via message"
+            android:textSize="26dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="80dp"/>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/copylink"
+        android:layout_below="@+id/shareviamessage"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="62dp">
+
+        <ImageView
+            android:layout_width="39dp"
+            android:layout_height="39dp"
+            android:src="@drawable/ic_baseline_link_24"
+            android:layout_marginTop="11dp"
+            android:layout_marginLeft="15dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Copy link "
+            android:textSize="26dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="80dp"/>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/sharepostvia"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="124dp">
+
+        <ImageView
+            android:layout_width="37dp"
+            android:layout_height="37dp"
+            android:src="@drawable/sharepost"
+            android:layout_marginTop="11dp"
+            android:layout_marginLeft="15dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Share post via"
+            android:textSize="26dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="80dp"/>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
+

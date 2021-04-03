@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/parent"
+    android:background="#fff">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/image"
+                    android:layout_width="42dp"
+                    android:layout_height="42dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/ic_launcher_background"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="5dp">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/title"
+                        android:layout_marginTop="3dp"
+                        android:layout_gravity="center_vertical"
+                        android:textSize="17sp"
+                        android:text="hhhhhdhsdbdbshh"
+                        android:textStyle="bold"/>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/title1"
+                        android:layout_marginTop="0dp"
+                        android:layout_gravity="center_vertical"
+                        android:textSize="14sp"
+                        android:text="hhhhhdhsdbdbshh"
+                        android:textStyle="bold"/>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/media_container"
+                android:layout_marginTop="5dp">
+
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/thumbnail"
+                    android:src="@drawable/ic_launcher_background"/>
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/ic_volume_up_grey"
+                    android:layout_gravity="end|bottom"
+                    android:id="@+id/volume_control"
+                    android:animateLayoutChanges="true"
+                    android:layout_marginEnd="15dp" />
+
+                <ProgressBar
+                    android:id="@+id/progressBar"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="190dp"
+                    android:layout_marginTop="45dp"
+                    android:visibility="gone"/>
+
+            </FrameLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp">
+
+
+                <xyz.hanks.library.bang.SmallBangView
+                    android:id="@+id/b1"
+                    android:layout_width="40dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="5dp"
+                    app:circle_end_color="#ffbc00"
+                    app:circle_start_color="#fa9651"
+                    app:dots_primary_color="#fa9651"
+                    app:dots_secondary_color="#ffbc00">
+
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/like"
+                        android:layout_width="38dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/like" />
+
+
+                </xyz.hanks.library.bang.SmallBangView>
+
+                <xyz.hanks.library.bang.SmallBangView
+                    android:id="@+id/b2"
+                    android:layout_width="38dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="53dp"
+                    app:circle_end_color="#ffbc00"
+                    app:circle_start_color="#fa9651"
+                    app:dots_primary_color="#fa9651"
+                    app:dots_secondary_color="#ffbc00">
+
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/heart"
+                        android:layout_width="35dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="5dp"
+                        android:src="@drawable/heart" />
+
+                </xyz.hanks.library.bang.SmallBangView>
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

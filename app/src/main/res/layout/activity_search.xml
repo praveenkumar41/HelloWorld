@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EFF1F3"
+    tools:context=".SearchActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/barlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="62dp"
+            android:background="@color/white"
+            app:popupTheme="@style/MenuStyle">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/backactivity"
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:src="@drawable/backs"
+                android:layout_marginTop="14dp"
+                android:layout_marginLeft="5dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Message"
+                android:textColor="@color/black"
+                android:textSize="24dp"
+                android:layout_marginTop="14dp"
+                android:layout_marginLeft="49dp"/>
+
+            <TextView
+                android:id="@+id/chatit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Next"
+                android:textColor="#1DA1F2"
+                android:textSize="22dp"
+                android:layout_marginLeft="350dp"
+                android:layout_marginTop="13dp"/>
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <com.google.android.material.chip.ChipGroup
+        android:layout_width="match_parent"
+        android:id="@+id/chip"
+        android:visibility="gone"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/barlayout"
+        />
+
+    <SearchView
+        android:id="@+id/userssearch"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:iconifiedByDefault="false"
+        android:queryHint="Search users.."
+        android:background="#E4E7EA"
+        android:layout_below="@+id/chip"
+        android:focusableInTouchMode="false">
+    </SearchView>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/userssearch"/>
+
+</RelativeLayout>
+

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/rootview"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/barlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:background="@color/white"
+            app:popupTheme="@style/MenuStyle">
+
+
+            <TextView
+                android:id="@+id/onlinename"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="23dp"
+                android:text="Liked by"
+                android:textColor="@color/black"
+                android:layout_marginTop="12dp"
+                android:layout_marginLeft="58dp"/>
+
+
+            <ImageView
+                android:id="@+id/backintent"
+                android:layout_width="31dp"
+                android:layout_height="31dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/backs"
+                android:layout_marginTop="12dp"/>
+
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/barlayout"/>
+
+
+</RelativeLayout>
+
+

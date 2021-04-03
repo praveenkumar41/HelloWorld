@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FriendsChatpad">
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/barlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="62dp"
+            android:background="@color/colorPrimary"
+            app:popupTheme="@style/MenuStyle">
+
+
+            <ImageView
+                android:id="@+id/usersetting"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="360dp"
+                android:src="@drawable/ic_baseline_error_outline_24"
+                android:layout_marginTop="15dp"/>
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/onlineimage"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/pro"
+                android:layout_marginLeft="40dp"
+                app:civ_border_width="4dp"
+                app:civ_border_color="@color/white"
+                android:layout_marginTop="12dp"/>
+
+
+            <TextView
+                android:id="@+id/onlinename"
+                android:layout_width="200dp"
+                android:layout_height="25dp"
+                android:autoSizeTextType="uniform"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="84dp"/>
+
+
+            <TextView
+                android:id="@+id/lastseen"
+                android:layout_width="200dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="34dp"
+                android:layout_marginLeft="88dp"/>
+
+            <ImageView
+                android:id="@+id/backintent"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/back"
+                android:layout_marginTop="11dp"/>
+
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/barlayout"
+        android:layout_above="@+id/pad"/>
+
+
+    <RelativeLayout
+        android:id="@+id/pad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#fff"
+        android:padding="5dp">
+
+
+        <EditText
+            android:id="@+id/chatpad"
+            android:layout_width="286dp"
+            android:padding="10dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:background="@drawable/edittext"
+            android:hint="Send message.."
+            android:paddingStart="20dp"
+            android:overScrollMode="always"
+            android:scrollbarStyle="insideInset"
+            android:scrollbars="vertical"
+            android:maxLines="50"/>
+
+        <ImageButton
+            android:id="@+id/sendbutton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/ripple1"
+            android:src="@drawable/messagesend" />
+
+
+        <com.nightonke.boommenu.BoomMenuButton
+            android:id="@+id/addbutton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            app:cardCornerRadius="30dp"
+            app:cardElevation="30dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/ripple1"
+            app:bmb_buttonEnum="textOutsideCircle"
+            app:bmb_piecePlaceEnum="piecePlace_dot_3_1"
+            app:bmb_buttonPlaceEnum="buttonPlace_sc_3_1"
+            android:src="@drawable/ic_add_black_24dp"/>
+
+
+    </RelativeLayout>
+    </RelativeLayout>
+

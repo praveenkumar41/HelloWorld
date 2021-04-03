@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/forme"
+        android:layout_width="110dp"
+        android:layout_height="45dp"
+        android:layout_centerHorizontal="true"
+        android:text="For me"/>
+
+    <Button
+        android:id="@+id/forboth"
+        android:layout_width="110dp"
+        android:layout_height="45dp"
+        android:layout_below="@id/forme"
+        android:layout_centerHorizontal="true"
+        android:text="For both"/>
+
+
+    <Button
+        android:id="@+id/download"
+        android:layout_width="110dp"
+        android:layout_height="45dp"
+        android:layout_below="@id/forboth"
+        android:layout_centerHorizontal="true"
+        android:text="Download"/>
+
+
+
+    <Button
+        android:id="@+id/cancel"
+        android:layout_width="110dp"
+        android:layout_height="45dp"
+        android:layout_below="@id/download"
+        android:layout_centerHorizontal="true"
+        android:text="cancel"/>
+
+</RelativeLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/rootview"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="2dp"
+    android:background="@color/white"
+    android:layout_height="75dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imageenter1"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="8dp"
+        android:src="@mipmap/ic_launcher_round" />
+
+    <TextView
+        android:id="@+id/un"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="68dp"
+        android:fontFamily="sans-serif"
+        android:text="username"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/black"
+        android:textSize="21dp" />
+
+    <TextView
+        android:id="@+id/un1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="68dp"
+        android:fontFamily="sans-serif"
+        android:text="username"
+        android:layout_marginTop="35dp"
+        android:textColor="#979A9C"
+        android:textSize="14dp"/>
+
+
+    <CheckBox
+        android:id="@+id/checkbox"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="350dp"
+        android:layout_centerVertical="true"/>
+
+</RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
